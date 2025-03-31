@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,98 +10,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-dark corzinha">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-    
-          <img class="imagemlogo" src="logo.png" alt="logotipo sos vestibular">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <img class="imagemlogo" src="logo.png" alt="logotipo sos vestibular" style="width: 150px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calendário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="pesquisa">
+                        <input class="form-control me-2 align" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Calendário</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cursos
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">UFPR</a></li>
-                    <li><a class="dropdown-item" href="#">UTFPR</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Mais informações</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="pesquisa">
-                <input class="form-control me-2" type="pesquisar" placeholder="pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-success" type="submit">Pesquisar</button>
-              </form>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="container mt-5 text-left">
+        <div class="row align-items-start">
+            <div class="col ufpr">
+                <img src="ufprfoto.png" alt="UFPR logo" class="img-fluid">
             </div>
-          </div>
+            <div class="col">
+                <h1>Vestibulares do Paraná</h1>
+                <h5>Entenda tudo sobre os vestibulares do Paraná</h5>
+                <p>Os vestibulares do Paraná são a principal forma de ingresso no ensino superior no estado, com diversas universidades públicas e privadas realizando seus próprios processos seletivos. Entre as principais estão a Universidade Estadual de Maringá (UEM), Universidade Estadual de Londrina (UEL) e Universidade Estadual do Paraná (UFPR). Além disso, algumas universidades adotam o Sistema de Seleção Unificada (Sisu), utilizando as notas do Enem. Os vestibulares costumam acontecer entre novembro e janeiro e incluem provas de conhecimentos gerais e redação. A preparação antecipada é essencial para o sucesso nos exames.</p>
+            </div>
         </div>
-      </nav>
+    </div>
 
 
-      <div class=" text-left legenda">
-        <div class="row align-items-start ">
-          <div class="col ufpr">
-            <img class="ufpr" src="ufpr.png" alt="">
+
+    <!-- Carrousel Section-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="mx-auto p-2" style="width:100%;"></div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Design sem nome (1).png" class="object-fit-contain border rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgestudante.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgestudante.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
           </div>
-          <div class="col legenda">
-            <h1>Vestibulares do Paraná</h1>
-            <h5>Entenda tudo sobre</h5>
-             <h5>Os vestibulares do Paraná são a principal forma de ingresso no ensino superior no estado, com diversas universidades públicas e privadas realizando seus próprios processos seletivos. Entre as principais estão a Universidade Estadual de Maringá (UEM), Universidade Estadual de Londrina (UEL) e Universidade Estadual do Paraná (UFPR). Além disso, algumas universidades adotam o Sistema de Seleção Unificada (Sisu), utilizando as notas do Enem. Os vestibulares costumam acontecer entre novembro e janeiro e incluem provas de conhecimentos gerais e redação. A preparação antecipada é essencial para o sucesso nos exames.
-            </h5>
-          </div>
-        </div>
-      </div>
-
-    
-
-      <div class="container overflow-hidden text-center">
-        <div class="row gx-5">
-          <div class="col">
-           <div class="p-3"><img src="estudantes.png" alt=""></div>
-          </div>
-          <div class="col">
-            <div class="p-3">
-              <ul> Cursos
-                <li>1° lugar: Pedagogia</li>
-                <li>2° lugar: Direito</li>
-                <li>3° lugar: Administração</li>
-                <li>4° lugar: Contabilidade</li>
-                <li>5° lugar: Enfermagem</li>
-                <li>6° lugar: Psicologia</li>
-                <li>7° lugar: Medicina</li>
-              </ul>
-
-            
-
-
-
-
-             </div>
-          </div>
-        </div>
+        
       </div>
 
 
 
 </body>
+
 </html>
