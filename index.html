@@ -12,6 +12,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    /* Estilos do Rodapé */
+    .footer {
+        text-align: center;
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Seção de Banner */
+    .banner-section {
+        background: linear-gradient(to right, #f49a62, #3c6690);
+        padding: 80px 0;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .banner-section h5 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .banner-section p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /* Estilo para o carrossel */
+    .carousel-item img {
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .carousel-indicators button {
+        background-color: #00b4d8;
+    }
+
+    /* Seção de Conteúdo com Informações */
+    .content-section {
+        background: #faf0eb;
+        padding: 50px 0;
+        color: #333333;
+    }
+
+    .content-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .content-section ul {
+        font-size: 1.2rem;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .content-section ul li {
+        margin-bottom: 10px;
+    }
+
+    .content-section p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+</style>
+
 <body>
 
     <!-- Navbar -->
@@ -21,33 +104,43 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
+                <div class="offcanvas-header">                    
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Calendário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cursos</a>
+                            <a class="nav-link" href="cursos.html">Cursos</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="pesquisa">
-                        <input class="form-control me-2 align" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button class="btn btn-success" type="submit">Pesquisar</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Banner Section -->
+    <!-- Seção de Banner -->
+    <div class="banner-section">
+        <div class="container text-center">
+            <h1>Vestibulares no Paraná</h1>
+            <h5>Descubra tudo sobre os processos seletivos das principais universidades paranaenses</h5>
+            <form class="d-flex mt-3" role="pesquisa">
+                <input class="form-control me-2" type="text" placeholder="Pesquise aqui" aria-label="Pesquisar">
+                <button class="btn btn-success" type="submit">Pesquisar</button>
+            </form>
+            <p>Os vestibulares do Paraná são a principal porta de entrada para as universidades no estado, com processos seletivos realizados por instituições públicas e privadas. Aqui você encontra todas as informações que precisa para se preparar para as provas e conquistar sua vaga no ensino superior.</p>
+        
+        </div>
+    </div>
+
+    <!-- Carousel de Imagens -->
+   <!-- Banner Section -->
     <div class="container mt-5 text-left">
         <div class="row align-items-start">
             <div class="col ufpr">
@@ -62,26 +155,44 @@
     </div>
 
 
+    <!-- Seção de Conteúdo -->
+    <div class="container content-section">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Principais Universidades do Paraná</h2>
+                <p>Conheça as principais universidades que realizam vestibulares no Paraná:</p>
+                <ul>
+                    <li>Universidade Estadual de Maringá (UEM)</li>
+                    <li>Universidade Estadual de Londrina (UEL)</li>
+                    <li>Universidade Federal do Paraná (UFPR)</li>
+                    <li>Universidade Tecnológica Federal do Paraná (UTFPR)</li>
+                    <li>Universidade Positivo</li>
+                    <li>PUC-PR</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Calendário dos Vestibulares</h2>
+                <p>Fique atento às principais datas de vestibulares:</p>
+                <ul>
+                    <li>UEM: Novembro</li>
+                    <li>UEL: Novembro</li>
+                    <li>UFPR: Janeiro</li>
+                    <li>UTFPR: Novembro</li>
+                </ul>
+                <p>Recomendamos que você se inscreva com antecedência e consulte as atualizações nos sites oficiais das universidades para não perder nenhum prazo importante.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- Carrousel Section-->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="mx-auto p-2" style="width:100%;"></div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="Design sem nome (1).png" class="object-fit-contain border rounded" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imgestudante.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imgestudante.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-          </div>
-        
-      </div>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Entre em Contato</a>
+        <img src="logo.png">
+        <p>&copy; 2025 SOS Vestibular. Todos os direitos reservados.</p>
+    </footer>
 
-
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
